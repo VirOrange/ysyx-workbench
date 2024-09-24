@@ -1,4 +1,4 @@
-nclude <nvboard.h>
+#include <nvboard.h>
 #include <Vtop.h>
  
 static TOP_NAME dut;
@@ -12,5 +12,5 @@ int main() {
 	      while(1) {
 		          nvboard_update();
 			      dut.eval(); // 一定要加！否则就没有更新电路状态！一定要加！否则就没有更新电路状态！ 一定要加！否则就没有更新电路状态！
-					  }
-					  }
+					     }
+					    }

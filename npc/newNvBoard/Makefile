@@ -14,7 +14,7 @@ default: $(BIN)
 
 $(shell mkdir -p $(BUILD_DIR))
 
-
+#constraint file
 SRC_AUTO_BIND = $(abspath $(BUILD_DIR)/auto_bind.cpp)
 $(SRC_AUTO_BIND): $(NXDC_FILES)
 	python3 $(NVBOARD_HOME)/scripts/auto_pin_bind.py $^ $@
@@ -47,3 +47,4 @@ clean:
 	rm -rf $(BUILD_DIR)
 
 .PHONY: default all clean run
+
